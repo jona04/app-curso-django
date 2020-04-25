@@ -1,0 +1,16 @@
+lenguagge: python
+
+python:
+  - 3.8
+
+env:
+  global:
+    - PIPENV_VENV_IN_PROJECT=1 #cria ambiente virtual dentro do projeto
+    - PIPENV_IGNORE_VIRTUALENVS=1 #ignora outras versoes do virtualenv
+
+install:
+  - pip install pipenv #instala pipenv
+  - pipenv sync --dev #instala dependencia de desenvolvimento com versao fixadas
+
+script:
+  - pipenv run flake8 #roda flake8 para teste PEP8
