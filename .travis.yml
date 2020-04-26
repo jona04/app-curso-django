@@ -14,3 +14,4 @@ install:
 
 script:
   - pipenv run flake8 #roda flake8 para teste PEP8
+  - pipenv run pytest
