@@ -11,6 +11,7 @@ env:
 install:
   - pip install pipenv #instala pipenv
   - pipenv sync --dev #instala dependencia de desenvolvimento com versao fixadas
+  - cp contrib/env-sample .env
 
 script:
   - pipenv run flake8 #roda flake8 para teste PEP8
