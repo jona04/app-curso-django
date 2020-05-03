@@ -7,11 +7,11 @@ verify_ssl = true
 flake8 = "*"
 pytest-cov = "*"
 codecov = "*"
+pytest-django = "*"
 
 [packages]
 django = "*"
 gunicorn = "*"
-pytest-django = "*"
 python-decouple = "*"
 dj-database-url = "*"
 psycopg2-binary = "*"
