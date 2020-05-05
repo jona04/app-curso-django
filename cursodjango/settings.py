@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cursodjango.base',
+    'cursodjango.aperitivos'
 ]
 
 MIDDLEWARE = [
